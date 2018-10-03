@@ -19,12 +19,11 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image2]: ./examples/center_2018_09_24_21_18_09_909.jpg "Center Image"
+[image3]: ./examples/left_2018_09_24_21_18_09_909.jpg "Left Image"
+[image4]: ./examples/right_2018_09_24_21_18_09_909.jpg "Right Image"
+[image5]: ./examples/center_2018_09_24_21_18_42_525.jpg "Original Image"
+[image6]: ./examples/flip.jpg "Flip Image"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -146,7 +145,14 @@ dense_4 (Dense)              (None, 1)                 11
 
 I used the dataset provided by udacity, and add more about some failed spots(especially the curve after the bridge).
 
+An example of data i collected:
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+
 To augment the data sat, I also flipped images and angles thinking that this would add more scenes to enhanced robustness. 
+![alt text][image5]
+![alt text][image6]
 
 
 After the collection process, I had 9813 number of data points. I then preprocessed this data by cropped the useless pixels.
